@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="calc-container">
+    <input type="text" id="calc-display" placeholder="input" aria-readonly="true">
+    <div class="buttons">
+    <div class="row1 row-buttons">
+        <button onclick="getDisplay('7')">7</button>
+        <button onclick="getDisplay('8')">8</button>
+        <button onclick="getDisplay('9')">9</button>
+        <button onclick="getDisplay('/')" class="symbols">÷</button>
+    </div>
+    <div class="row2 row-buttons">
+        <button onclick="getDisplay('4')">4</button>
+        <button onclick="getDisplay('5')">5</button>
+        <button onclick="getDisplay('6')">6</button>
+        <button onclick="getDisplay('x')" class="symbols">x</button>
+    </div>
+    <div class="row3 row-buttons">
+        <button onclick="getDisplay('1')">1</button>
+        <button onclick="getDisplay('2')">2</button>
+        <button onclick="getDisplay('3')">3</button>
+        <button onclick="getDisplay('+')" class="symbols">+</button>
+    </div>
+    <div class="row4 row-buttons">
+        <button onclick="getDisplay('0')">0</button>
+        <button onclick="getDisplay('.')">.</button>
+        <button onclick="getDisplay('-')" class="symbols">-</button>
+        <button id="results-button"onclick="calculate()" class="symbols">=</button>
+        <button id="clear-button" onclick="Clear()" class="symbols">CLEAR</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
